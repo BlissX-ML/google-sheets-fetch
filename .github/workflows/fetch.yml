@@ -17,7 +17,7 @@ jobs:
               with:
                   node-version: 18
 
-            - run: npm install node-fetch
+            - run: npm install # 这会安装 package.json 中的依赖
 
             - run: node scripts/fetch-csv.js
 
