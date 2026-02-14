@@ -10,7 +10,7 @@ async function fetchExpenseCsv() {
 
     const text = await res.text();
 
-    fs.writeFileSync('/public/data.csv', text);
+    fs.writeFileSync('./public/data.csv', text);
 }
 
 fetchExpenseCsv();
