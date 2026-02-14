@@ -5,6 +5,9 @@ on:
         - cron: '0 * * * *' # 每小时更新一次
     workflow_dispatch:
 
+permissions:
+    contents: write # 读写权限
+
 jobs:
     fetch:
         runs-on: ubuntu-latest
