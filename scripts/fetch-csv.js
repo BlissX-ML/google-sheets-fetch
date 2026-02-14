@@ -10,7 +10,7 @@ async function fetchExpenseCsv() {
 
     const text = await res.text();
 
-    fs.writeFileSync('./public/data.csv', text);
+    fs.writeFileSync('./data.csv', text); // 保存到根目录
 }
 
 fetchExpenseCsv();
